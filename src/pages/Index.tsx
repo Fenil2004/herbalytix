@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
+import HerbalytixScrollExperience from "@/components/HerbalytixScrollExperience";
 import AboutSection from "@/components/AboutSection";
 import ProductShowcase from "@/components/ProductShowcase";
 import ProductGallery from "@/components/ProductGallery";
@@ -14,6 +15,7 @@ const Index = () => {
     <div className="min-h-screen">
       <Header />
       <HeroSection />
+      <HerbalytixScrollExperience />
       <AboutSection />
       <ProductShowcase />
       <ProductGallery />
