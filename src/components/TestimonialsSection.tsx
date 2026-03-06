@@ -3,18 +3,18 @@ import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const testimonials = [
   {
-    name: "Priya Sharma",
+    name: "Aditi mehta",
     rating: 5,
     text: "My hair fall has reduced by 80% in just 3 weeks! The herbal fragrance is absolutely divine. Best shampoo I've ever used.",
   },
   {
-    name: "Ankit Verma",
+    name: "Varsh patel",
     rating: 5,
     text: "Finally, a chemical-free shampoo that actually works. My dandruff is completely gone and my hair feels so much thicker.",
   },
   {
-    name: "Sneha Patel",
-    rating: 4,
+    name: "Sneha goswami",
+    rating: 5,
     text: "Love the natural ingredients and how soft my hair feels after every wash. The packaging is beautiful too!",
   },
 ];

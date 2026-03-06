@@ -162,12 +162,12 @@ const HerbalytixScrollExperience: React.FC = () => {
                     {/* Beat A */}
                     <motion.div
                         style={{ opacity: beatAOpacity, y: beatAY }}
-                        className="absolute left-[10%] md:left-[12%] top-1/2 -translate-y-1/2 max-w-[200px] md:max-w-sm space-y-4 text-left"
+                        className="absolute w-full md:w-auto px-6 md:px-0 left-0 md:left-[12%] top-[15%] md:top-1/2 md:-translate-y-1/2 max-w-full md:max-w-sm space-y-2 md:space-y-4 text-center md:text-left z-20"
                     >
-                        <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-black/80 tracking-tight leading-tight">
-                            PURE BOTANICAL <br /> POWER
+                        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black/90 tracking-tight leading-tight">
+                            PURE BOTANICAL <br className="hidden md:block" /> POWER
                         </h2>
-                        <p className="text-xs md:text-sm text-black/50 max-w-xs leading-relaxed">
+                        <p className="text-sm text-black/60 md:text-black/50 mx-auto md:mx-0 max-w-xs leading-relaxed">
                             Nature's finest ingredients, perfectly extracted for your hair.
                         </p>
                     </motion.div>
@@ -175,12 +175,12 @@ const HerbalytixScrollExperience: React.FC = () => {
                     {/* Beat B */}
                     <motion.div
                         style={{ opacity: beatBOpacity, y: beatBY }}
-                        className="absolute left-[10%] md:left-[12%] top-1/2 -translate-y-1/2 max-w-[200px] md:max-w-sm space-y-4 text-left"
+                        className="absolute w-full md:w-auto px-6 md:px-0 left-0 md:left-[12%] top-[15%] md:top-1/2 md:-translate-y-1/2 max-w-full md:max-w-sm space-y-2 md:space-y-4 text-center md:text-left z-20"
                     >
-                        <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-black/80 tracking-tight leading-tight">
-                            PRECISION <br /> PUMP
+                        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black/90 tracking-tight leading-tight">
+                            PRECISION <br className="hidden md:block" /> PUMP
                         </h2>
-                        <p className="text-xs md:text-sm text-black/50 max-w-xs leading-relaxed">
+                        <p className="text-sm text-black/60 md:text-black/50 mx-auto md:mx-0 max-w-xs leading-relaxed">
                             Engineered for the perfect dose, every time.
                         </p>
                     </motion.div>
@@ -191,12 +191,12 @@ const HerbalytixScrollExperience: React.FC = () => {
                     {/* Beat C */}
                     <motion.div
                         style={{ opacity: beatCOpacity, y: beatCY }}
-                        className="absolute right-[10%] md:right-[12%] top-1/2 -translate-y-1/2 max-w-[200px] md:max-w-sm space-y-4 text-right"
+                        className="absolute w-full md:w-auto px-6 md:px-0 right-0 md:right-[12%] top-[70%] md:top-1/2 md:-translate-y-1/2 max-w-full md:max-w-sm space-y-2 md:space-y-4 text-center md:text-right z-20"
                     >
-                        <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-black/80 tracking-tight leading-tight">
-                            NOURISHING <br /> ESSENCE
+                        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black/90 tracking-tight leading-tight">
+                            NOURISHING <br className="hidden md:block" /> ESSENCE
                         </h2>
-                        <p className="text-xs md:text-sm text-black/50 max-w-xs leading-relaxed ml-auto">
+                        <p className="text-sm text-black/60 md:text-black/50 mx-auto md:ml-auto md:mr-0 max-w-xs leading-relaxed">
                             16 natural herbal extracts suspended in a rich, restorative formula.
                         </p>
                     </motion.div>
@@ -204,19 +204,21 @@ const HerbalytixScrollExperience: React.FC = () => {
                     {/* Beat D */}
                     <motion.div
                         style={{ opacity: beatDOpacity, y: beatDY }}
-                        className="absolute right-[10%] md:right-[12%] top-1/2 -translate-y-1/2 max-w-[200px] md:max-w-sm space-y-6 text-right"
+                        className="absolute w-full md:w-auto px-6 md:px-0 right-0 md:right-[12%] top-[65%] md:top-1/2 md:-translate-y-1/2 max-w-full md:max-w-sm space-y-4 md:space-y-6 text-center md:text-right z-20"
                     >
-                        <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-black/80 tracking-tight uppercase italic leading-tight">
-                            EXPERIENCE <br /> HERBALYTIX
+                        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black/90 tracking-tight uppercase italic leading-tight">
+                            EXPERIENCE <br className="hidden md:block" /> HERBALYTIX
                         </h2>
 
-                        <div className="flex flex-col items-end gap-4">
-                            <p className="text-sm md:text-base text-black/60 max-w-xs leading-relaxed">
+                        <div className="flex flex-col items-center md:items-end gap-3 md:gap-4">
+                            <p className="text-base text-black/70 md:text-black/60 max-w-xs leading-relaxed">
                                 Elevate your daily ritual.
                             </p>
 
                             <a
-                                href="#product-showcase"
+                                href="https://wa.me/918200969154?text=Hi%20I%20want%20to%20buy%20Herbalytix%20shampoo"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="pointer-events-auto bg-black text-white px-8 py-3 rounded-full font-bold text-sm hover:bg-black/90 transition-colors uppercase tracking-widest"
                             >
                                 Buy Now

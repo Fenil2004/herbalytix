@@ -47,10 +47,12 @@ const Header = () => {
                             {link.name}
                         </a>
                     ))}
-                    <Button className="rounded-full px-6 gap-2">
-                        <ShoppingCart className="w-4 h-4" />
-                        Buy Now
-                    </Button>
+                    <a href="https://wa.me/918200969154?text=Hi%20I%20want%20to%20buy%20Herbalytix%20shampoo" target="_blank" rel="noopener noreferrer">
+                        <Button className="rounded-full px-6 gap-2">
+                            <ShoppingCart className="w-4 h-4" />
+                            Buy Now
+                        </Button>
+                    </a>
                 </nav>
 
                 {/* Mobile Navigation */}
@@ -73,10 +75,12 @@ const Header = () => {
                                         {link.name}
                                     </a>
                                 ))}
-                                <Button className="rounded-full w-full mt-4 gap-2">
-                                    <ShoppingCart className="w-5 h-5" />
-                                    Buy Now
-                                </Button>
+                                <a href="https://wa.me/918200969154?text=Hi%20I%20want%20to%20buy%20Herbalytix%20shampoo" target="_blank" rel="noopener noreferrer" className="w-full mt-4 block">
+                                    <Button className="rounded-full w-full gap-2 block">
+                                        <ShoppingCart className="w-5 h-5 inline-block -mt-1 mr-2" />
+                                        Buy Now
+                                    </Button>
+                                </a>
                             </nav>
                         </SheetContent>
                     </Sheet>

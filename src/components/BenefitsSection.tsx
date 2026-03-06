@@ -1,26 +1,31 @@
-import { ShieldCheck, Droplets, Wind, Leaf } from "lucide-react";
+import { ShieldCheck, Droplets, Wind, Leaf, Sparkles, Heart } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const benefits = [
   {
-    icon: Leaf,
-    title: "Protein Boost",
-    desc: "Enriched with Aloe Vera and Fenugreek to add essential protein for hair strength.",
+    icon: Wind,
+    title: "Strengthens Roots",
+    desc: "Enriched with powerful botanicals to fortify your hair from the very foundation.",
   },
   {
     icon: ShieldCheck,
-    title: "Dandruff Control",
-    desc: "Contains Neem and Bhringraj, powerful herbs known to effectively reduce dandruff.",
+    title: "Reduces Hair Fall",
+    desc: "Natural ingredients work together to minimize breakage and excessive hair loss.",
+  },
+  {
+    icon: Sparkles,
+    title: "Adds Natural Shine",
+    desc: "Restores your hair's inherent luster, leaving it vibrant, soft, and glossy.",
+  },
+  {
+    icon: Heart,
+    title: "Promotes Scalp Health",
+    desc: "Nourishes the scalp to prevent flakes, dryness, and common irritations.",
   },
   {
     icon: Droplets,
-    title: "Root Strength",
-    desc: "Nourishes the scalp and strengthens hair from root to tip.",
-  },
-  {
-    icon: Wind,
-    title: "Natural Texture",
-    desc: "Improves overall hair texture, leaving it soft, smooth, and naturally healthy.",
+    title: "Gentle Cleansing",
+    desc: "Effectively purifies hair and scalp without stripping away essential moisture.",
   },
 ];
 
@@ -32,14 +37,14 @@ const BenefitsSection = () => {
         <div className="text-center mb-16 space-y-4">
           <p className="text-sm uppercase tracking-[0.3em] text-primary font-medium">Why Choose Us</p>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-            Benefits You'll Love
+            Claims & Benefits
           </h2>
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="flex flex-wrap justify-center gap-8">
           {benefits.map((b) => (
             <div
               key={b.title}
-              className="text-center p-8 rounded-2xl bg-background border border-border hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+              className="text-center w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] p-8 flex flex-col items-center rounded-2xl bg-background border border-border hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
             >
               <div className="w-16 h-16 mx-auto mb-5 rounded-full bg-primary/10 flex items-center justify-center">
                 <b.icon className="w-8 h-8 text-primary" />

@@ -14,7 +14,7 @@ const VideoSection = () => {
         <div className="max-w-3xl mx-auto">
           <div className="aspect-video rounded-2xl overflow-hidden shadow-xl border border-border">
             <iframe
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              src="https://www.youtube.com/embed/l20lX-5Jl6E"
               title="Product Demo Video"
               className="w-full h-full"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

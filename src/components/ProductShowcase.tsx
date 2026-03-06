@@ -1,14 +1,22 @@
 import { useState } from "react";
 import shampooFront from "@/assets/herb7.jpeg";
 import shampooBack from "@/assets/shampoo-back.jpg";
-import ingredientsImg from "@/assets/ingredients.jpg";
+import ingredientsImg from "@/assets/ingred.jpeg";
+import herby1 from "@/assets/herby_1.jpeg";
+import herby2 from "@/assets/herby_2.jpeg";
+import herby3 from "@/assets/herby_3.jpeg";
+import iconApply from "@/assets/apply.png";
+import iconMassage from "@/assets/massage.png";
+import iconWait from "@/assets/wait.png";
+import iconRinse from "@/assets/rinse.png";
 import { ShoppingCart, ChevronLeft, ChevronRight } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const products = [
-  { img: shampooFront, label: "Front View", link: "#" },
-  { img: shampooBack, label: "Back View", link: "#" },
-  { img: ingredientsImg, label: "Key Ingredients", link: "#" },
+  { img: herby3, label: "Front View", link: "https://wa.me/918200969154?text=Hi%20I%20want%20to%20buy%20Herbalytix%20shampoo" },
+  // { img: herby1, label: "Back View 1", link: "#" },
+  { img: herby2, label: "Back View", link: "https://wa.me/918200969154?text=Hi%20I%20want%20to%20buy%20Herbalytix%20shampoo" },
+  { img: ingredientsImg, label: "Key Ingredients", link: "https://wa.me/918200969154?text=Hi%20I%20want%20to%20buy%20Herbalytix%20shampoo" },
 ];
 
 const ProductShowcase = () => {
@@ -61,7 +69,7 @@ const ProductShowcase = () => {
 
         {/* Coverflow Carousel */}
         <div className="relative max-w-3xl mx-auto mb-12" style={{ perspective: "1200px" }}>
-          <div className="relative h-[420px] md:h-[500px] flex items-center justify-center overflow-hidden">
+          <div className="relative h-[480px] md:h-[580px] flex items-center justify-center overflow-hidden">
             {products.map((p, i) => (
               <div
                 key={p.label}
@@ -74,17 +82,19 @@ const ProductShowcase = () => {
                 }}
               >
                 <div className="rounded-2xl overflow-hidden bg-card border border-border shadow-xl">
-                  <div className="aspect-square overflow-hidden">
+                  <div className="aspect-[2/3] overflow-hidden bg-muted/10">
                     <img
                       src={p.img}
                       alt={p.label}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain p-4"
                     />
                   </div>
                   <div className="p-4 text-center space-y-3">
                     <p className="text-sm text-muted-foreground font-medium">{p.label}</p>
                     <a
                       href={p.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-2.5 rounded-full text-sm font-medium hover:opacity-90 transition-opacity"
                     >
                       <ShoppingCart className="w-4 h-4" />
@@ -124,24 +134,64 @@ const ProductShowcase = () => {
           </div>
         </div>
 
-        <div className="text-center space-y-4">
+        <div className="text-center space-y-4 mb-24">
           <p className="text-3xl font-serif font-bold text-foreground">
             ₹499 <span className="text-lg text-muted-foreground line-through ml-2">₹799</span>
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="#"
+              href="https://wa.me/918200969154?text=Hi%20I%20want%20to%20buy%20Herbalytix%20shampoo"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-full font-medium hover:opacity-90 transition-opacity"
             >
               <ShoppingCart className="w-5 h-5" />
-              Buy on Amazon
+              Buy via WhatsApp
             </a>
-            <a
-              href="#"
-              className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-8 py-4 rounded-full font-medium hover:opacity-90 transition-opacity"
-            >
-              Buy on Flipkart
-            </a>
+          </div>
+        </div>
+
+        {/* Usage Directions Section */}
+        <div className="max-w-4xl mx-auto border-t border-border pt-20">
+          <div className="text-center mb-12 space-y-4">
+            <p className="text-sm uppercase tracking-[0.3em] text-primary font-medium">How to Use</p>
+            <h3 className="text-3xl md:text-4xl font-bold text-foreground">
+              Usage Directions
+            </h3>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="flex flex-col items-center text-center space-y-4">
+              <div className="w-40 h-40 flex items-center justify-center p-2">
+                <img src={iconApply} alt="Apply" className="w-full h-full object-contain" />
+              </div>
+              <p className="font-semibold text-foreground">Apply</p>
+              <p className="text-sm text-muted-foreground">Generously apply to wet hair, ensuring even coverage from root to tip.</p>
+            </div>
+
+            <div className="flex flex-col items-center text-center space-y-4">
+              <div className="w-40 h-40 flex items-center justify-center p-2">
+                <img src={iconMassage} alt="Massage" className="w-full h-full object-contain" />
+              </div>
+              <p className="font-semibold text-foreground">Massage</p>
+              <p className="text-sm text-muted-foreground">Gently massage into the scalp using circular motions to stimulate and nourish.</p>
+            </div>
+
+            <div className="flex flex-col items-center text-center space-y-4">
+              <div className="w-40 h-40 flex items-center justify-center p-2">
+                <img src={iconWait} alt="Wait" className="w-full h-full object-contain" />
+              </div>
+              <p className="font-semibold text-foreground">Wait</p>
+              <p className="text-sm text-muted-foreground">Leave on for 1-2 minutes to allow the potent herbal extracts to deeply penetrate.</p>
+            </div>
+
+            <div className="flex flex-col items-center text-center space-y-4">
+              <div className="w-40 h-40 flex items-center justify-center p-2">
+                <img src={iconRinse} alt="Rinse" className="w-full h-full object-contain" />
+              </div>
+              <p className="font-semibold text-foreground">Rinse</p>
+              <p className="text-sm text-muted-foreground">Rinse thoroughly until water runs clear, revealing softer, healthier hair.</p>
+            </div>
           </div>
         </div>
       </div>

@@ -8,6 +8,7 @@ import BenefitsSection from "@/components/BenefitsSection";
 import VideoSection from "@/components/VideoSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import SocialSection from "@/components/SocialSection";
+import VisualJourney from "@/components/VisualJourney";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -18,7 +19,8 @@ const Index = () => {
       <HerbalytixScrollExperience />
       <AboutSection />
       <ProductShowcase />
-      <ProductGallery />
+      <VisualJourney />
+      {/* <ProductGallery /> */}
       <BenefitsSection />
       <VideoSection />
       <TestimonialsSection />

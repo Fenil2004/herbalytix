@@ -18,14 +18,16 @@ const HeroSection = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
             <a
-              href="#products"
+              href="https://wa.me/918200969154?text=Hi%20I%20want%20to%20buy%20Herbalytix%20shampoo"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-full font-medium text-base hover:opacity-90 transition-opacity"
             >
               <ShoppingCart className="w-5 h-5" />
               Buy Now
             </a>
             <a
-              href="https://wa.me/91XXXXXXXXXX?text=Hi%20I%20want%20to%20buy%20Herbalytix%20shampoo"
+              href="https://wa.me/918200969154?text=Hi%20I%20want%20to%20buy%20Herbalytix%20shampoo"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-card text-foreground border border-border px-8 py-4 rounded-full font-medium text-base hover:bg-muted transition-colors"
